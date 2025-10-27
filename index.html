@@ -1,0 +1,76 @@
+<!doctype html>
+<p>Add a contact email you use for job hunting.</p>
+<div class="field-row">
+<input id="emailInput" type="email" placeholder="you@example.com" />
+<button id="saveEmailBtn">Save Email</button>
+</div>
+<p class="muted">Saved email: <span id="savedEmail">(none)</span></p>
+</section>
+
+
+<section class="card" id="portal-section">
+<h2>Online Job Portal</h2>
+<p>Quick links to job portals you use.</p>
+<div id="portalLinks" class="portal-links">
+<a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener">LinkedIn Jobs</a>
+<a href="https://www.indeed.com/" target="_blank" rel="noopener">Indeed</a>
+<a href="#" id="addPortalBtn">+ Add portal</a>
+</div>
+<div id="addPortalForm" class="hidden">
+<input id="portalName" placeholder="Portal name" />
+<input id="portalUrl" placeholder="https://example.com/jobs" />
+<button id="savePortalBtn">Add</button>
+<button id="cancelPortalBtn">Cancel</button>
+</div>
+</section>
+
+
+<section class="card" id="tracker-section">
+<h2>Job Application Tracker</h2>
+<form id="jobForm" class="job-form">
+<input id="company" placeholder="Company" required />
+<input id="role" placeholder="Role / Title" required />
+<input id="dateApplied" type="date" />
+<select id="status">
+<option value="Applied">Applied</option>
+<option value="Interview">Interview</option>
+<option value="Offer">Offer</option>
+<option value="Rejected">Rejected</option>
+</select>
+<button type="submit">Add / Save</button>
+</form>
+
+
+<div class="search-row">
+<input id="searchInput" placeholder="Search company or role" />
+<select id="filterStatus">
+<option value="">All statuses</option>
+<option value="Applied">Applied</option>
+<option value="Interview">Interview</option>
+<option value="Offer">Offer</option>
+<option value="Rejected">Rejected</option>
+</select>
+</div>
+
+
+<table id="jobsTable" class="jobs-table">
+<thead>
+<tr><th>Company</th><th>Role</th><th>Date</th><th>Status</th><th>Actions</th></tr>
+</thead>
+<tbody></tbody>
+</table>
+
+
+<div class="small muted">All data stored locally in your browser (localStorage).</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<small>Built with ♥ — Export or host anywhere.</small>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
